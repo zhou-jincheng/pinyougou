@@ -1,0 +1,570 @@
+.main {
+    width: 980px;
+    height: 457px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.focus .arrow-l,
+.focus .arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .3);
+    /* font-family: "icomoon";
+    font-size: 20px; */
+    font: 20px "icomoon";
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.focus .arrow-l:hover,
+.focus .arrow-r:hover {
+    color: #c81623;
+}
+.focus .arrow-l {
+    left: 0;
+}
+.focus .arrow-r {
+    right: 0;
+}
+.focus .circle {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.focus .circle li {
+    float: left;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 4px;
+    border: 1px solid #fff;
+}
+.focus .circle .current {
+    background-color: orange;
+}
+.focus ul {
+    position: absolute;
+    /* 轮播图最大图片数量10 */
+    left: 0;
+    width: 600%;
+    z-index: -1;
+}
+.focus ul li {
+    float: left;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+.newsflash .news {
+    width: 100%;
+    height: 166px;
+    border: 1px solid #e4e4e4;
+}
+
+.newsflash .news .news-hd {
+    width: 248px;
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    line-height: 33px;
+}
+.newsflash .news .news-hd h4 {
+    float: left;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.newsflash .news .news-hd .more {
+    float: right;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.newsflash .news .news-hd .more::after {
+    content: "\e920";
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+.news-dd ul {
+    line-height: 24px;
+    margin-top: 6px;
+}
+.news-dd ul li {
+    width: 100%;
+    height: 24px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.newsflash .lifeservice {
+    width: 100%;
+    height: 210px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    text-align: center;
+}
+.lifeservice ul li a {
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    background: url(../images/icons.png) no-repeat;
+    margin-top: 12px;
+}
+.lifeservice ul li:first-child a {
+    background-position: -16px -15px;
+}
+.lifeservice ul li:nth-child(2) a {
+    background-position: -78px -15px;
+}
+.lifeservice ul li:nth-child(3) a {
+    background-position: -140px -15px;
+}
+.lifeservice ul li:nth-child(4) a {
+    background-position: -205px -15px;
+}
+.lifeservice ul li:nth-child(5) a {
+    background-position: -16px -88px;
+}
+.lifeservice ul li:nth-child(6) a {
+    background-position: -78px -88px;
+}
+.lifeservice ul li:nth-child(7) a {
+    background-position: -140px -88px;
+}
+.lifeservice ul li:nth-child(8) a {
+    background-position: -205px -88px;
+}
+.lifeservice ul li:nth-child(9) a {
+    background-position: -16px -158px;
+}
+.lifeservice ul li:nth-child(10) a {
+    background-position: -78px -158px;
+}
+.lifeservice ul li:nth-child(11) a {
+    background-position: -140px -158px;
+}
+.lifeservice ul li:last-child a {
+    background-position: -205px -158px;
+}
+.newsflash .bargain {
+    width: 100%;
+    height: 75px;
+    margin-top: 4px;
+}
+
+/* 推荐模块start */
+.recom {
+    height: 164px;
+    background-color:pink;
+    margin-top: 10px;
+}
+
+.recom-hd {
+    float: left;
+    width: 200px;
+    height: 164px;
+    background-color: #5c5251;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.recom-bd {
+    float: left;
+    width: 1000px;
+    height: 164px;
+    background-color: skyblue;
+}
+.recom-bd ul li img{
+    float: left;
+    width: 250px;
+    height: 164px;
+}
+
+/* 猜你喜欢 start */
+.like {
+    height: 272px;
+}
+.like .like-hd {
+    height: 36px;
+    line-height: 36px;
+}
+.like-hd h4 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+.like-hd a {
+    float: right;
+    margin-right: 20px;
+}
+.like-hd a::after {
+    content: '\ea2e';
+    font-family: 'icomoon';
+    padding-left: 8px;
+}
+.like-bd {
+    height: 235px;
+    border: 1px solid #e4e4e4;
+}
+.like-bd ul {
+    width: 1202px;
+}
+.like-bd ul li {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 235px;
+}
+.like-bd ul li a {
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+.like-bd ul li img{
+    height: 130px;
+    margin-top: 15px;
+}
+.like-bd ul li:nth-child(4) img {
+    margin-top: 40px;
+    height: 62px;
+}
+.like-bd ul li:last-child p{
+    border: 0;
+}
+.like-bd ul li p {
+    position: absolute;
+    width: 200px;
+    bottom: 10px;
+    padding: 3px 36px;
+    border-right: 1px solid #cccc;
+    line-height: 24px;
+}
+
+.like-bd ul li p em {
+    font-size: 18px;
+    color: #df3033;
+}
+
+/* 有趣interest模块 start */
+.interest {
+    height: 442px;
+    margin-top: 20px;
+}
+.interest .interest-hd {
+    height: 36px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.interest-hd i {
+    display: inline-block;
+    margin-left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #111111;
+    vertical-align: middle;
+}
+.interest-bd {
+    height: 406px;
+    border: 1px solid #e4e4e4;
+    overflow: hidden;
+}
+.interest-bd ul {
+    width: 1202px;
+}
+.interest-bd>ul>li{
+    float: left;
+    height: 406px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.li-1 {
+    position: relative;
+    background-color: #b8bddd;
+}
+.li-1 p {
+    position: absolute;
+    top: 25px;
+    left: 22px;
+    font-size: 18px;
+}
+.li-1 p span {
+    font-size: 16px;
+}
+.li-1 img {
+    position: absolute;
+    top: 110px;
+    left: 125px;
+}
+
+.li-2 li:first-of-type{
+    position: relative;
+    height: 207px;
+    width: 228px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.li-2 h3 {
+    width: 190px;
+    height: 40px;
+    border-bottom: 1px dotted #e4e4e4;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+.li-2 ul li img{
+    position: absolute;
+    right: 0;
+}
+.li-2 li:first-of-type img {
+    top: 28px;
+}
+
+.li-2 ul li h4 {
+    position: absolute;
+    width: 228px;
+    left: 8px;
+    font-size: 16px;
+}
+.li-2 li:first-of-type h4{
+    top: 68px;
+}
+.li-2 ul li p {
+    position: absolute;
+    width: 228px;
+    left: 8px;
+    line-height: 20px;
+}
+.li-2 li:first-of-type p{
+    top: 98px;
+}
+.li-2 li:last-of-type{
+    position: relative;
+    height: 159px;
+    width: 228px;
+}
+.li-2 li:last-of-type img {
+    top: 10px;
+}
+.li-2 li:last-of-type h4 {
+    top: 50px;
+}
+.li-2 li:last-of-type p {
+    top: 80px;
+}
+.li-3 {
+    background-color: #f7f7f7;
+}
+.li-3 h3 {
+    width: 366px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.li-3 ul {
+    width: 404px;
+}
+.li-3 ul li {
+    position: relative;
+    float: left;
+}
+.li-3 ul li:first-of-type {
+    width: 404px;
+    height: 207px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.li-3 ul li:nth-of-type(2) {
+    width: 202px;
+    height: 159px;
+    border-right: 1px solid #e4e4e4;
+}
+.li-3 ul li:last-of-type {
+    width: 202px;
+    height: 159px;
+}
+.li-3 img {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+}
+.li-3 h4 {
+    position: absolute;
+    font-size: 16px;
+}
+.li-3 p {
+    position: absolute;
+    line-height: 20px;
+}
+.li-3 ul li:first-child h4 {
+    top: 72px;
+    left: 52px;
+}
+.li-3 ul li:first-child p {
+    top: 104px;
+    left: 52px;
+}
+.li-3 ul li:nth-child(n+1) h4 {
+    top: 50px;
+}
+.li-3 ul li:nth-child(n+1) p {
+    top: 80px;
+}
+.li-3 ul li:nth-child(2) h4,.li-3 ul li:nth-child(2) p {
+    left: 12px;
+}
+.li-3 ul li:last-child h4,.li-3 ul li:last-child p {
+    left: 20px;
+}
+.li-4 {
+    border: 0;
+}
+.col-404 {
+    width: 404px;
+}
+.col-228 {
+    width: 228px;
+}
+.col-164 {
+    width: 164px;
+}
+/* 有趣interest模块 end */
+
+/* 固定电梯导航 start*/
+.fixtool {
+    position: fixed;
+    top: 100px;
+    width: 66px;
+    display: none;
+}
+.fixtool ul li {
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-bottom: 1px solid #e4e4e4;
+    cursor: pointer;
+}
+.fixtool .current {
+    background-color: #c81623;
+    color: #ffffff;
+}
+/* 固定电梯导航 end*/
+
+/* floor楼层区域制作start */
+/* 1楼家电层 */
+.floor .box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.floor .box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.floor .box-hd .tab-list {
+    float: right;
+    height: 30px;
+    line-height: 28px;
+}
+.floor .box-hd .tab-list ul li {
+    float: left;
+}
+.floor .box-hd .tab-list ul li a {
+    margin: 0 20px;
+}
+.floor .w {
+    margin-top: 30px;
+}
+.box-bd {
+    height: 361px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.tab-list-item>div {
+    float: left;
+}
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210 ul {
+    padding-left: 15px;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    margin-right: 12px;
+    line-height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+}
+.col_210 img {
+    margin-top: 15px;
+}
+.col_329 {
+    position: relative;
+    width: 329px;
+}
+.col_329 ul {
+    position: absolute;
+    width: 48px;
+    left: 140px;
+    bottom: 16px;
+}
+.col_329 ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #3e3e3e;
+    margin: 3px;
+}
+.col_329 ul li:first-child {
+    background-color: #fff;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #e4e4e4;
+}
+.bb {
+    /* a标签如果包含有宽度的子模块，需转换为块模块 */
+    display: block;
+    border-bottom: 1px solid #e4e4e4;
+}
+.col_219 {
+    width: 219px;
+}
+/* floor楼层区域制作end */

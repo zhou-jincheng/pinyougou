@@ -1,0 +1,169 @@
+/* 购物车css样式表 */
+header .logo b {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 10px;
+    left: 185px;
+    font-size: 20px;
+}
+/* 购物车主要内容css样式 start */
+.cart-filter-bar {
+    font-size: 16px;
+    font-weight: 700;
+    color: #E2231A;
+}
+.cart-filter-bar em {
+    padding: 5px;
+    border-bottom: 1px solid #E2231A;
+}
+/* 头部全选模块 start */
+.cart-thead {
+    height: 42px;
+    margin: 5px 0 10px 0;
+    background-color: #f3f3f3 ;
+    border: 1px solid #ececec;
+    border-top: 0;
+    line-height: 42px;
+    position: relative;
+}
+.cart-thead>div,.cart-item>div {
+    float: left;
+}
+.cart-thead .t-checkbox {
+    width: 120px;
+}
+.cart-thead .t-checkbox input {
+    vertical-align: middle;
+    margin: 0 2px 0 10px;
+}
+.cart-thead .t-goods {
+    width: 495px;
+}
+.cart-thead .t-price {
+    width: 130px;
+}
+.cart-thead .t-num {
+    width: 160px;
+}
+.cart-thead .t-sum {
+    width: 130px;
+}
+.cart-thead .t-action {
+    width: 150px;
+}
+/* 头部全选模块 end */
+
+/* 商品详细详细模块 start */
+.cart-item {
+    height: 175px;
+    margin: 15px 0 15px;
+    border: 1px solid #f3f3f3;
+    border-top: 2px solid #aaaaaa;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.check-cart-item {
+    background-color: #fff4e8;
+}
+.p-checkbox {
+    width: 50px;
+}
+.p-goods {
+    width: 545px;
+}
+.p-goods .p-pic {
+    float: left;
+    border: 2px solid #e4e4e4;
+    padding: 5px;
+    margin-right: 10px;
+}
+.p-goods .p-msg {
+    float: left;
+    width: 205px;
+}
+.p-price {
+    width: 115px;
+}
+.p-num {
+    width: 175px;
+}
+.p-num a,.p-num input {
+    float: left;
+    border: 1px solid #e4e4e4;
+    background-color: #ffffff;
+    text-align: center;
+}
+.p-num a {
+    width: 16px;
+    height: 20px;
+}
+.p-num input {
+    width: 44px;
+    height: 20px;
+    border-left: 0;
+    border-right: 0;
+}
+.p-sum {
+    width: 140px;
+}
+.p-action:hover {
+    cursor: pointer;
+}
+/* 结算模块 start */
+.cart-floatbar {
+    height: 50px;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+.cart-floatbar > div,.toolbar-right > div {
+    float: left;
+}
+.cart-floatbar .toolbar-right {
+    float: right;
+}
+.cart-floatbar .select-all {
+    width: 80px;
+}
+.cart-floatbar .select-all input {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.cart-floatbar .operation {
+    width: 500px;
+}
+
+.toolbar-right .amount-sum {
+    margin-right: 10px;
+}
+.amount-sum em {
+    margin: 0 2px;
+    color: #e2231a;
+    font-weight: 700;
+}
+
+.price-sum em{
+    margin-left: 5px;
+    color: #e2231a;
+    font-size: 16px;
+    font-weight: 700;
+}
+.price-sum {
+    margin-right: 10px;
+}
+.toolbar-right .btn-area {
+    float: right;
+    width: 95px;
+    height: 100%;
+    background-color: #e54346;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+/* 结算模块 end */
+/* 商品详细详细模块 end */
+/* 购物车主要内容css样式 start */

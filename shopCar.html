@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车-品优购</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shopCar.css">
+    <!-- 引入jQuery文件 -->
+    <script src="js/jQuery.min.js"></script>
+    <!-- 引入js文件 -->
+    <script src="js/car.js"></script>
+</head>
+
+<body>
+    <!-- 快捷导航 start -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您！</li>
+                    <li>&nbsp;<a href="#">请登录</a>&nbsp;<a href="register.html" class="style_red">免费注册</a></li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow-icon">我的品优购</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 快捷导航 end -->
+
+    <!-- header 开始 -->
+    <header class="header w">
+        <div class="logo">
+            <h1><a href="index.html" title="品优购商城">品优购商城</a></h1>
+            <b>购物车</b>
+        </div>
+    </header>
+    <!-- header 结束 -->
+
+    <!-- 购物车主题内容 start -->
+    <div class="c-container">
+        <div class="w">
+            <!-- 商品分类 -->
+            <div class="cart-filter-bar">
+                <em>全部商品</em>
+            </div>
+            <!-- 购物车主要内容模块 -->
+            <div class="cart-warp">
+                <!-- 头部全选模块 -->
+                <div class="cart-thead">
+                    <div class="t-checkbox">
+                        <input type="checkbox" name="" id="" class="checkall">全选
+                    </div>
+                    <div class="t-goods">商品</div>
+                    <div class="t-price">单价</div>
+                    <div class="t-num">数量</div>
+                    <div class="t-sum">小计</div>
+                    <div class="t-action">操作</div>
+                </div>
+                <!-- 商品详细模块 -->
+                <div class="cart-item-list">
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-pic"><img src="upload/p1.jpg" alt=""></div>
+                            <div class="p-msg">【5本26.8元】经典儿童文学彩图青少版八十天环游地球中学生语文教学大纲</div>
+                        </div>
+                        <div class="p-price">￥12.60</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥12.60</div>
+                        <div class="p-action">删除</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-pic"><img src="upload/p2.jpg" alt=""></div>
+                            <div class="p-msg">【2000张贴纸】贴纸书 3-6岁 贴画儿童 贴画书全套12册 贴画 贴纸儿童 汽</div>
+                        </div>
+                        <div class="p-price">￥24.80</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥24.80</div>
+                        <div class="p-action">删除</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-pic"><img src="upload/p3.jpg" alt=""></div>
+                            <div class="p-msg">唐诗三百首+成语故事全2册 一年级课外书 精装注音儿童版 小学生二三年级课外阅读书籍</div>
+                        </div>
+                        <div class="p-price">￥29.80</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥29.80</div>
+                        <div class="p-action">删除</div>
+                    </div>
+                </div>
+                <!-- 结算模块 -->
+                <div class="cart-floatbar">
+                    <div class="select-all">
+                        <input type="checkbox" name="" id="" class="checkall">全选
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:" class="remove-batch">删除选中的商品</a>
+                        <a href="javascript:" class="clear-all">清理购物车</a>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="amount-sum">已经选<em>1</em>件商品</div>
+                        <div class="price-sum">总价：<em>￥12.60</em></div>
+                        <div class="btn-area">去结算</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车主题内容 end -->
+
+
+
+
+    <!-- footer底部 start -->
+    <footer class="footer">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>极速物流</h4>
+                            <p>急速物流，急速送达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>无忧售后</h4>
+                            <p>7天无理由退换货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>特色服务</h4>
+                            <p>私人定制家电套餐</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service_txt">
+                            <h4>帮助中心</h4>
+                            <p>您的购物指南</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>会员介绍</dd>
+                    <dd>生活旅行/团购</dd>
+                    <dd>常见问题</dd>
+                    <dd>大家电</dd>
+                    <dd>联系客服</dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>上门自提</dd>
+                    <dd>211限时达</dd>
+                    <dd>配送服务查询</dd>
+                    <dd>配送费收取标准</dd>
+                    <dd>海外配送</dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>货到付款</dd>
+                    <dd>在线支付</dd>
+                    <dd>分期付款</dd>
+                    <dd>邮局汇款</dd>
+                    <dd>公司转账</dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>售后政策</dd>
+                    <dd>价格保护</dd>
+                    <dd>退款说明</dd>
+                    <dd>返修/退换货</dd>
+                    <dd>取消订单</dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd>夺宝岛</dd>
+                    <dd>DIY装机</dd>
+                    <dd>延保服务</dd>
+                    <dd>品优购E卡</dd>
+                    <dd>品优购通信</dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><img src="images/wx_cz.jpg" alt=""></dd>
+                    <dd>品优购客户端</dd>
+                </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="">关于我们</a> | <a href="">联系我们</a> | <a href="">联系客服</a> | <a href="">商家入驻</a> | <a
+                        href="">营销中心</a> | <a href="">手机品优购</a> | <a href="">友情链接</a> | <a href="">销售联盟</a> | <a
+                        href="">品优购社区</a> | <a href="">品优购公益</a> | <a href="">English Site</a> | <a href="">Contact
+                        U</a>
+                </div>
+                <div class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn<br />
+                    京ICP备08001421号京公网安备110108007702
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer底部 end -->
+</body>
+
+</html>

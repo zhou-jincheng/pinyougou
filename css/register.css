@@ -1,0 +1,134 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 82px;
+    border-bottom: 1px solid #b1191a;
+    padding-top: 15px;
+}
+
+.registerarea {
+    height: 522px;
+    border: 1px solid #e4e4e4;
+    margin-top: 20px;
+}
+.registerarea h3 {
+    height: 42px;
+    background-color: #ececec;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.registerarea h3 .login {
+    float: right;
+    font-size: 14px;
+}
+.login a {
+    color: #c81623;
+}
+.reg-form {
+    width: 600px;
+    margin: 53px auto 0;
+}
+.reg-form ul li {
+    margin-bottom: 20px;
+}
+.reg-form ul li label{
+    display: inline-block;
+    width: 117px;
+    text-align: right;
+    font-size: 14px;
+}
+.reg-form ul li .inp {
+    width: 241px;
+    height: 36px;
+    border: 1px solid #999999;
+}
+.error-icon,.success-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: -2px 5px 0;
+}
+.reg-form ul li .error-icon {
+    background: url(../images/error.png) no-repeat;
+}
+.reg-form ul li .success-icon {
+    background: url(../images/success.png) no-repeat;
+}
+.error {
+    color: #df3033;
+}
+.success {
+    color: green;
+}
+.reg-form ul li:nth-child(3) {
+    margin-bottom: 10px;
+}
+.reg-form .safe {
+    padding-left: 207px;
+    color: #b2b2b2;
+    line-height: 12px;
+}
+.safe em {
+    display: inline-block;
+    width: 34px;
+    height: 13px;
+    text-align: center;
+    color: #fff;
+}
+.safe .ruo {
+    background-color: #de1111;
+}
+.safe .zhong {
+    background-color: #40b83f;
+}
+.safe .qiang {
+    background-color: #f79100;
+}
+.agree {
+    padding-top: 22px;
+    padding-left: 120px;
+}
+.agree input {
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 12px;
+}
+.agree a {
+    color: #4fafe9;
+}
+
+.btn {
+    width: 200px;
+    height: 34px;
+    margin-left: 125px;
+    margin-top: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    background-color: #c81623;
+    font-size: 14px;
+}
+
+/* footer底部 start */
+.footer {
+    height: 118px;
+}
+
+.mod_copyright {
+    text-align: center;
+}
+.mod_copyright .links {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.mod_copyright .links a {
+    padding: 0px 5px;
+}
+/* footer底部 end */
